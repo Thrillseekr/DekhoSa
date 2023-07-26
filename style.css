@@ -1,0 +1,683 @@
+/* Note: sections have borders kept commented for reference of section styling*/
+
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Poppins:ital@1&family=Roboto&display=swap");
+
+/* Universal Styling for whole doc*/
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Webpage Layout by Flexbox */
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #131010;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Media Queries for Responsive website*/
+/* for less than width of 700px */
+@media only screen and (max-width: 700px) {
+
+  /* Style heading of Main content */
+  #main .trending-now h2,
+  #main .action h2,
+  #main .stand-up h2,
+  #main .thriller h2,
+  #main .sci-fi h2 {
+    top: -8%;
+    left: 6%;
+    font-size: 40px;
+  }
+
+    /* Responsive Search Bar */
+  .topnav #search input[type="text"] {
+    width: 30px;
+    height: 30px;
+    background-image: url("search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    background-color: transparent;
+    font-size: 15px;
+    color: #f9fafa;
+    border: 3px ridge #00ffd5;
+    border-radius: 50%;
+
+    transition: width 0.1s ease-in-out 0s;
+  }
+}
+
+/* for less than width of 500px */
+@media only screen and (max-width: 500px) {
+
+  /* Sidebar with become 100% */
+  .topnav .browse #open_sidebar:checked + .sidebar {
+    left: 0px;
+    width: 100%;
+    background-color: #343436;
+  }
+  .topnav .browse .sidebar #close {
+    position: sticky;
+    top: 2%;
+    left: 90%;
+    padding: 7px;
+    color: #ffffff;
+    border: 3px ridge #ff3c77;
+    border-radius: 70%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+    /* Style heading of Main content */
+  #main .trending-now h2,
+  #main .action h2,
+  #main .stand-up h2,
+  #main .thriller h2,
+  #main .sci-fi h2 {
+    top: -20px;
+    left: 20px;
+    font-size: 25px;
+  }
+
+  /* Alingment of last line of greetings */
+  .footer #last-line p {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    /* border: 2px dashed #f70101; */
+  }
+}
+
+/* Search Bar disappears at width less than 650px */
+@media only screen and (max-width: 650px) {
+  .topnav #search input[type="text"] {
+    display: none;
+  }
+}
+
+/* Navbar */
+.topnav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1vw 40px;
+  z-index: 10;
+  box-shadow: 0px 0px 20px 50px #18171746 inset;
+  /* border: 1px dashed #ffffff; */
+}
+
+/* logo & categories flexbox */
+.topnav .logo-cat {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px dashed #ffffff; */
+}
+
+/* logo Styling*/
+.topnav #logo a {
+  font-family: "Poppins", sans-serif;
+  padding: 2px;
+  color: white;
+  font-size: 4vw;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px #e5ff00;
+  /* border: 1px dotted #ff0000; */
+}
+.topnav #logo a span {
+  color: rgb(153, 0, 255);
+  font-weight: bolder;
+  text-shadow: none;
+  transition: all ease-in-out 0s;
+  animation: logo 0.5s ease-in-out 0s infinite;
+}
+@keyframes logo {
+  0% {
+    font-weight: lighter;
+  }
+  100% {
+    color: #7ac3ff;
+    font-weight: bolder;
+  }
+}
+
+/* Browse Styling */
+.topnav .browse #open {
+  margin-left: 3vw;
+  padding: 2px;
+  font-size: 3vw;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: #00ffd5;
+  /* border: 1px dotted #ff0000; */
+}
+.topnav .browse #open:hover {
+  color: #f5f5f5;
+  font-weight: 900;
+  transition: color 0.1s ease-in-out 0s;
+  text-shadow: 0px 0px 10px #00ffd5;
+}
+
+/* Register / Login option & Search Bar */
+.topnav .reg-log {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 550px;
+  /* border: 2px dashed #fac000; */
+}
+
+/* Register option */
+.topnav #register a {
+  padding: 4px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 3vw;
+  text-decoration: none;
+  border: 2px solid #00ffd5;
+  box-shadow: 0px 0px 5px 2px #00ffd5 inset;
+  border-radius: 20px 20px;
+  /* border: 2px dashed #fac000; */
+}
+.topnav #register a:hover {
+  color: #000000;
+  background-color: #00ffd5;
+  transition: background-color 0.4s ease-in-out 0s;
+}
+
+/* Login option */
+.topnav #login a {
+  margin-left: 3vw;
+  font-size: 3vw;
+  text-decoration: none;
+  color: #00ffd5;
+  /* border: 2px dashed #fac000; */
+}
+.topnav #login a:hover {
+  color: #f5f5f5;
+  font-weight: bold;
+  transition: color 0.1s ease-in-out 0s;
+  text-shadow: 0px 0px 10px #00ffd5;
+}
+
+/* Search Style */
+#search {
+  margin-right: 25px;
+  /* border: 1px dotted #ff0000; */
+}
+
+/* Search Input Styling */
+#search input[type="text"] {
+  width: 45px;
+  height: 45px;
+  background-image: url("search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+  background-color: transparent;
+  font-size: 20px;
+  color: #f9fafa;
+  border: 3px ridge #00ffd5;
+  border-radius: 50%;
+
+  transition: width 0.1s ease-in-out 0s;
+}
+#search input[type="text"]:hover {
+  border: 2px solid #00ffd5;
+  box-shadow: 0px 0px 5px 5px #00ffd5;
+}
+#search input[type="text"]:focus {
+  width: 100%;
+  border-radius: 20px 20px;
+  padding-left: 30px;
+  background-color: transparent;
+  background-position: left;
+  box-shadow: 0px 0px 5px 2px #00ffd5;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  height: 100%;
+  top: 0px;
+  left: -250px;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+  transition: all 0.4s ease-in-out 0s;
+  /* border: thick ridge #ffffff; */
+}
+
+/* Hiding Vertical ScrollBar in sidebar */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Opening & Closing of sidebar */
+
+#open_sidebar:checked + .sidebar {
+  left: 0px;
+  width: 250px;
+  background-color: #343436de;
+  transition: left 0.4s ease-in-out;
+  /* border-right: thick ridge #ffffff; */
+}
+
+/* cross(X) button for closing sidebar */
+.sidebar #close {
+  position: sticky;
+  top: 10px;
+  left: 200px;
+  padding: 7px;
+  color: #ffffff;
+  border: 3px ridge rgb(255, 60, 118);
+  border-radius: 70%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar #close:hover {
+  color: #ffffff;
+  padding: 3%;
+  font-weight: bolder;
+  box-shadow: 0px 0px 5px 2px #ffa9c3;
+}
+
+/* Sidebar Sections */
+.sidebar .popular,
+.genres,
+.collections {
+  padding: 20px 20px 20px 30px;
+  border-bottom: 3px ridge #363434b4;
+  /* border: 1px dotted #ff0000; */
+}
+
+.collections {
+  border-bottom: none;
+}
+
+/* Sidebar Section heading */
+.sidebar .popular h4,
+.genres h4,
+.collections h4 {
+  padding-bottom: 15px;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #ff3c77;
+  /* border: 1px dotted #ff0000; */
+}
+
+/* Sidebar Content */
+.sidebar .popular a,
+.sidebar .genres a,
+.sidebar .collections a {
+  display: block;
+  padding: 3px;
+  font-size: 20px;
+  text-align: justify;
+  color: white;
+  text-decoration: none;
+}
+
+.popular a:hover,
+.genres a:hover,
+.collections a:hover {
+  display: block;
+  padding: 0.1px;
+  text-decoration: none;
+  text-align: justify;
+  font-weight: bold;
+  color: #00ffd5;
+  transition: font-weight 0.1s ease;
+}
+
+/* Slide Show */
+.slideshow {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px ridge rgb(43, 43, 43);
+}
+
+/* Bottom gradient in slideshow */
+.slideshow .gradient {
+  position: absolute;
+  bottom: 0%;
+  height: 150px;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    black
+  );
+  /* border: 2px ridge #181818; */
+}
+
+.slideshow .frame {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  /* border: 1px ridge #ff0000; */
+}
+
+.slideshow .frame .img_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* border: 10px solid #9dff00; */
+}
+
+/* images styling */
+.frame .img_container #pics {
+  /* keep width:100% & height:auto of images for responsiveness */
+  width: 100%;
+  height: auto;
+  padding: 0px 5px;
+  object-fit: cover;
+  border: 5px ridge brown;
+  /* border: 1px solid #3700ff; */
+
+  transition: transform 5s ease 1s;
+  animation: slide 50s ease-in-out 1s infinite;
+}
+
+/* images animation */
+@keyframes slide {
+  0% {
+    transform: translateX(-0%);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-200%);
+  }
+  30% {
+    transform: translateX(-300%);
+  }
+  40% {
+    transform: translateX(-400%);
+  }
+  50% {
+    transform: translateX(-400%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-100%);
+  }
+  90% {
+    transform: translateX(-0%);
+  }
+  100% {
+    transform: translateX(-0%);
+  }
+}
+
+/* Coming Soon*/
+.frame .coming-soon {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 0%;
+  left: 2%;
+  z-index: 2;
+  padding-bottom: 1px;
+  color: #ffed9b;
+  font-size: 5vw;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px #ffffff;
+  /* border: 2px dashed #f10606; */
+}
+
+/* Lets Dive i heading */
+#lets-dive-in {
+  margin: 8% 0% 10% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px dashed #f10606; */
+}
+#lets-dive-in h1 {
+  font-family: "Playball", cursive;
+  /* used 'vw' for responsive text size*/
+  font-size: 10vw;
+  color: #fffbd8;
+  text-align: center;
+  text-shadow: 3px 1px 15px #fa1172;
+  /* border: 2px dashed #f10606; */
+}
+#lets-dive-in h1:hover {
+  font-weight: bold;
+  color: #ff9faf;
+}
+
+/* main content */
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Movie Sections */
+.trending-now,
+.action,
+.stand-up,
+.thriller,
+.sci-fi {
+  /* do not set width, it get set to 100% by default */
+  position: relative;
+  padding: 30px;
+  margin: 8% 0.5%;
+  background-color: transparent;
+  border: 5px ridge #494949;
+
+  transition: box-shadow 2s ease-in-out;
+  animation: move_border 1s ease-in-out 1s infinite forwards;
+}
+
+/* Border Animation */
+@keyframes move_border {
+  0% {
+    box-shadow: 0px 0px 20px 5px cadetblue inset;
+  }
+  100% {
+    box-shadow: 0px 0px 40px 10px cadetblue inset;
+  }
+}
+
+/* heading of movie sections */
+.trending-now h2,
+.action h2,
+.stand-up h2,
+.thriller h2,
+.sci-fi h2 {
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 7px;
+  background-color: #16011f00;
+  text-shadow: 0px 0px 12px rgb(252, 105, 1);
+  /* border: 2px dashed #f10606; */
+}
+
+/* movie section in flexbox*/
+.trending-now .movies,
+.action .movies,
+.stand-up .movies,
+.thriller .movies,
+.sci-fi .movies {
+  height: 300px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* border: 2px dashed #fbff03; */
+}
+/* hidden horizonatl scrollbar */
+.movies::-webkit-scrollbar {
+  display: none;
+}
+.trending-now .movies .image,
+.action .movies .image,
+.stand-up .movies .image,
+.thriller .movies .image,
+.sci-fi .movies .image {
+  min-width: 200px;
+  height: 295px;
+  margin: 8px;
+  object-fit: contain;
+  transition: scale 0.1s ease-in-out;
+  /* border: 2px dashed #03ffab; */
+}
+.trending-now .movies .image:hover,
+.action .movies .image:hover,
+.stand-up .movies .image:hover,
+.thriller .movies .image:hover,
+.sci-fi .movies .image:hover {
+  transform: scale(1.1);
+  /* border: 2px dashed #03ffab; */
+}
+
+/* note for horizontal scrolling */
+.trending-now q {
+  position: relative;
+  top: 16px;
+  z-index: 4;
+  font-size: 1.5vw;
+  color: #ff7b00;
+  text-align: center;
+  /* border: 2px dashed #f10606; */
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px 5px 50px;
+  color: #ffffff;
+  background-color: #363434b4;
+  list-style-type: none;
+  /* border: 2px dashed #ffffff; */
+}
+
+/* Details section */
+.footer .details {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px dashed #ffffff; */
+}
+
+/* Company Name */
+.footer h1 {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 9% 15px 0px;
+  border-bottom: 4px ridge #494949;
+  text-shadow: 0px 0px 10px #e5ff00;
+  /* border: 2px dashed #f30303; */
+}
+.footer h1 span {
+  color: #9900ff;
+  text-shadow: none;
+  font-weight: bolder;
+}
+
+/* Social Icons */
+.footer .details .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+  /* border: 2px dashed #e5ff00; */
+}
+.footer .social a {
+  font-size: 4vw;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #363434b4;
+  /* border: 2px dashed #ffffff; */
+}
+.footer .social a i:hover {
+  transform: scale(1.1);
+  text-shadow: 0px 0px 5px #e5ff00;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Information Section */
+.footer .info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* border: 2px dashed #fa0505; */
+}
+.footer .info h4 {
+  color: #87c9ff;
+  padding: 8px 0%;
+  list-style-type: none;
+  font-size: larger;
+  /* border: 2px dashed #fa0505; */
+}
+.footer .info li {
+  padding: 2px 2px;
+  list-style-type: none;
+  /* border: 2px dashed #fa0505; */
+}
+
+/* greeting Section */
+.footer #last-line {
+  padding: 2%;
+  text-align: center;
+  /* border: 2px dashed #f70101; */
+}
+.footer #last-line a {
+  color: #00ffd5;
+  font-size: large;
+  text-decoration: none;
+  /* border: 2px dashed #ffffff; */
+}
+.footer #last-line span i {
+  padding-top: 15px;
+  color: white;
+  font-size: 30px;
+  line-height: 10px;
+  /* border: 2px dashed #f70101; */
+}
+
+
+/* Move to top button */
+#top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  padding-top: 3px;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #16011f;
+  /* border: 2px dashed #f70101; */
+}
+#top:hover {
+  color: #ffdd7a;
+  box-shadow: 0px 0px 10px 5px #ffe07a;
+}
