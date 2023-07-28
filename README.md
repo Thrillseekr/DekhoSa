@@ -33,7 +33,7 @@ With the increasing number of movies being released every year, it can be diffic
 ## Proposed Solution 
 
 #### DekhoSa - get Movies & Shows.
-It is bacically a Movies collection platform, where users can experience the famous movies of all kind and also keep them aware new upcoming movies.
+It is bacically a Movies collection platform, where users can experience the popular movies of all kind and also keep them aware new upcoming movies.
 This platform is unlike those which released information of all movies, it only presents the kind and types which are rated good.
 
 A *user-friendly interface* for browsing, searching, and organized movie collection.
