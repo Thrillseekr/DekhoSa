@@ -3,10 +3,19 @@
 ![Screenshot](https://github.com/Thrillseekr/DekhoSa/blob/main/Movies/Readme1.JPG)
 
 <div align="center">
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
-<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" /><br>   
-<img src="https://forthebadge.com/images/badges/built-by-developers.svg" />
-<img src="https://forthebadge.com/images/badges/uses-brains.svg" />   
+
+[![Generic badge](https://img.shields.io/badge/view-demo-blue?style=for-the-badge&label=View%20Demo)](https://thrillseekr.github.io/DekhoSa/)
+
+</div> 
+
+<div align="center">
+
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Thrillseekr/DekhoSa?logo=github&style=for-the-badge)](https://github.com/Thrillseekr/) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/Thrillseekr/DekhoSa?style=for-the-badge&logo=git)](https://github.com/Thrillseekr/) 
+[![Code size](https://img.shields.io/github/languages/code-size/Thrillseekr/DekhoSa?style=for-the-badge)](https://github.com/Thrillseekr/DekhoSa)
+[![Languages](https://img.shields.io/github/languages/count/Thrillseekr/DekhoSa?style=for-the-badge)](https://github.com/Thrillseekr/DekhoSa)
+[![Top](https://img.shields.io/github/languages/top/Thrillseekr/DekhoSa?style=for-the-badge&label=Top%20Languages)](https://github.com/Thrillseekr/DekhoSa)
+
 </div> 
 
 <br>
@@ -18,18 +27,21 @@
   [![GitHub](https://img.shields.io/github/license/Thrillseekr/DekhoSa?style=plastic)](https://github.com/Thrillseekr/DekhoSa/blob/master/LICENSE)
 </div> 
 
-## Problem Statement 😖
+## Problem Statement 
 
-Many students miss out on the latest job and internship opportunities due to a lack of awareness about them. Often, they become aware of these opportunities when it's already too late to apply. 
-It can be challenging to find verified job and internship opportunities quickly and easily, especially those that are relevant to one's interests and qualifications. 
-This can lead to missed opportunities and a delay in career growth.
+With the increasing number of movies being released every year, it can be difficult for movie enthusiasts to keep track of all the movies they want to watch and have watched. Additionally, finding information about movies such as release dates, ratings, reviews, and cast and crew details can be time-consuming and cumbersome. There is a need for a centralized platform where users can easily browse, search, and organize their movie collection, as well as access detailed information about movies. A movie collection site could address this problem by providing a user-friendly interface for managing a personal movie library and accessing comprehensive movie information. This would enhance the movie-watching experience for users and help them discover new movies to watch.
 
+## Proposed Solution 
 
-## Proposed Solution 🤩
+#### DekhoSa - get Movies & Shows.
+It is bacically a Movies collection platform, where users can experienced the famous movies of all kind.
+This platform is unlike those which released information of all movies, it only presents the kind and types which are rated good.
 
-#### Grabbit, a community-driven platform that provides the latest updates about verified job, internship, and hackathon opportunities. 
-#### With Grabbit, students can quickly and easily find opportunities that match their skills and interests. 
-#### Additionally, Grabbit offers a platform for experienced professionals to share their knowledge and insights through podcasts and motivational content, inspiring and guiding students as they pursue their careers.
+A *user-friendly interface* for browsing, searching, and organized movie collection.
+
+By implementing these features, the movie collection site could provide a centralized platform for movie enthusiasts to discover new movies to watch without spending much time in searching.
+
+## Glimpses
 
 ## Technologies
 <div align="center">
@@ -49,38 +61,30 @@ Where & How these tech stacks are used :
    - Bootstrap : For making corousal responsive
 
 
-## Live Demo
-Check out the live demo of [DekhoSa - Get Movies & Shows](https://thrillseekr.github.io/DekhoSa/).
 
 
-## Before You Start
-<ul>
-<li>Try to maintain the file format & folder structure. </li>
-<li>Try to maintain proper file names. </li>
-<li>Don't use capital or spaces for files names instead use _ or -. </li>
-</ul>
 
 ## Getting Started
 Please follow these simple steps to start working:<br>
 
-**1.**  If you want to work on issue then comment. If you get assigned, Fork [this](https://github.com/agamjotsingh18/pollitup.git) repository.
+**1.**  Fork [this](https://github.com/Thrillseekr/DekhoSa.git) repository.
 
 **2.**  Clone your forked copy of the project.
 
 ```
-git clone https://github.com/agamjotsingh18/pollitup.git
+git clone https://github.com/Thrillseekr/DekhoSa.git
 ```
 
 **3.** Navigate to your project directory and open it in your code editor. :file_folder: .
 
 ```
-cd pollitup
+cd DekhoSa
 ```
 
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/agamjotsingh18/pollitup.git
+git remote add upstream https://github.com/Thrillseekr/DekhoSa.git
 ```
 
 **5.** Check the remotes for this repository.
@@ -135,6 +139,18 @@ git push -u origin <your_branch_name>
 ## License
 This Repository is licensed under its [MIT License.](https://github.com/Thrillseekr/DekhoSa/blob/main/LICENSE)
 
+
+---------
+
+```javascript
+
+if (youEnjoyed) {
+    starThisRepository();
+}
+
+```
+
+-----------
 
 
 
