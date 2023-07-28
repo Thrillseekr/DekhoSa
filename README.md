@@ -124,16 +124,14 @@ git commit -m "Relevant message"
 git push -u origin <your_branch_name>
 ```
 
-**12.** Open a Pull Request with a name of the issue and describe about your changes with reasons. To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repository you are supposed to make a PR to.
+ To Open a Pull Request with a name of the issue and describe about your changes with reasons. To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repository you are supposed to make a PR to.
+
+Add appropriate title and description to your pull request explaining your changes and efforts done.
+
+Click on `Create Pull Request`.
 
 
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
-
-
-**14.** Click on `Create Pull Request`.
-
-
-**15** Voila!<br>
+ Voila!<br>
 ![Whoohooo!](https://media3.giphy.com/media/sgswHaZw5yklq/giphy.gif?cid=ecf05e4752791acvsi719im8d4lib8z33uxbga6secdplwq2&rid=giphy.gif)
 
 ## License
