@@ -9,8 +9,7 @@
 </div> 
 
 <div align="center">
-
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Thrillseekr/DekhoSa?logo=github&style=for-the-badge)](https://github.com/Thrillseekr/) 
+ 
 [![GitHub last commit](https://img.shields.io/github/last-commit/Thrillseekr/DekhoSa?style=for-the-badge&logo=git)](https://github.com/Thrillseekr/) 
 [![Code size](https://img.shields.io/github/languages/code-size/Thrillseekr/DekhoSa?style=for-the-badge)](https://github.com/Thrillseekr/DekhoSa)
 [![Languages](https://img.shields.io/github/languages/count/Thrillseekr/DekhoSa?style=for-the-badge)](https://github.com/Thrillseekr/DekhoSa)
