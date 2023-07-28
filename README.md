@@ -40,7 +40,6 @@ A *user-friendly interface* for browsing, searching, and organized movie collect
 
 By implementing these features, the movie collection site could provide a centralized platform for movie enthusiasts to discover new movies to watch without spending much time in searching.
 
-## Glimpses
 
 ## Technologies
 <div align="center">
