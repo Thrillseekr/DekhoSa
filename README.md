@@ -132,6 +132,9 @@ git push -u origin <your_branch_name>
 **15** Voila!<br>
 ![Whoohooo!](https://media3.giphy.com/media/sgswHaZw5yklq/giphy.gif?cid=ecf05e4752791acvsi719im8d4lib8z33uxbga6secdplwq2&rid=giphy.gif)
 
+## License
+This Repository is licensed under its [MIT License.](https://github.com/Thrillseekr/DekhoSa/blob/main/LICENSE)
+
 
 
 
