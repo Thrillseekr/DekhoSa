@@ -2,4 +2,4 @@
 
 // Bootstrap Corousal Scipt
 
-$('.slideshow .carousel').carousel({interval:500, ride:false, pause:"hover"}); 
+$('.slideshow .carousel').carousel({interval:2000, ride:false, pause:"hover"}); 
