@@ -19,6 +19,22 @@
    <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/Thrillseekr/DekhoSa?style=plastic"/>
  
   [![GitHub](https://img.shields.io/github/license/Thrillseekr/DekhoSa?style=plastic)](https://github.com/Thrillseekr/DekhoSa/blob/master/LICENSE)
+</div> 
 
+## Technologies
+<div align="center">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />
+  
+</div><br>
+   
+Where & How these tech stacks are used :
 
-</div>  
+   - Flexbox : A component of CSS which makes this Website Fully Responsive
+   - HTML : Used for Structuring the layout
+   - CSS : Used for styling of elements
+   - Javascript : Used for designing the Corousal Next & Previous keys
+   - Bootstrap : For making corousal responsive
+
